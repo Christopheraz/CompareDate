@@ -4,3 +4,5 @@ Compare the start date and the end date to make sure that the end date is not be
 下面有一个炒鸡简单的Javascript判断语句。
 
 主要使用了JavaScript里的split的方法
+
+PS：index是一个日历插件
