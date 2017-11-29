@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<script lanauage="javascript">
+
+	 function comparemonth(){
+	   var a=document.form1.F_StartTime.value;	   
+	   var b=document.form1.F_EndTime.value;
+	   var a1=a.split("-");//以-分开
+	   var b1=b.split("-");
+	   if (a1[0]>b1[0])
+	   {
+		   alert("开始时间大于结束时间,年份error!");
+	   }
+	   else if (a1[0]<b1[0])
+		   {
+	    	 alert("开始时间小于结束时间，right!") ;
+		   }
+		else{
+		     if (a1[1]>b1[1])
+			   {
+                alert("开始时间大于结束时间,月份error");
+			   }
+			   else if (a1[1]<b1[1])
+			   {
+				   alert("开始时间小于结束时间，right!");
+			   }
+			   else{
+                    if(a1[2]>b1[2])
+                      {
+                       	alert("开始时间大于结束时间,日期error");
+                      }
+                    else if (a1[2]<b1[2])
+                       {
+                       	alert("开始时间小于结束时间，right!");
+                       }
+                    else 
+                        {
+                        	alert("开始时间等于结束时间");
+                        }
+			      }  
+		}
+	 }
+</script>
+
+<form name="form1" id="form1">
+
+ <INPUT TYPE="text" NAME="F_StartTime" id="F_StartTime" value="2017-10-21">
+ <INPUT TYPE="text" NAME="F_EndTime" id="F_EndTime" value="2017-10-21"><BR>
+
+ 
+
+<INPUT TYPE="button" value="check" onclick="comparemonth()">
+
+
+
+</form>
+
+</body>
+
+</html>
